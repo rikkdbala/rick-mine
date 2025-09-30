@@ -1,0 +1,112 @@
+:root {
+  --verde: #45f500;
+  --branca: #FFFFFF;
+  --luz: rgb(135, 120, 141);
+  --preto: #000000;
+  --rosa: #F85B72;
+}
+
+@font-face {
+  font-family: 'Minecraft'; /* O nome que você usará para referenciar a fonte */
+  src: url('./Minecrafter.Reg.ttf'); /* O caminho para o seu ficheiro .tff */
+}
+
+body {
+  align-items: center;
+  background: var(--preto);
+  display: flex;
+  justify-content: center;
+  font-family: 'Minecraft';
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#background-video {
+  position: fixed; /* Fixa o vídeo na viewport */
+  right: 0;
+  bottom: 0;
+  min-width: 100%; /* Garante que o vídeo cubra toda a largura */
+  min-height: 100%; /* Garante que o vídeo cubra toda a altura */
+  width: auto;
+  height: auto;
+  z-index: -1; /* Coloca o vídeo atrás de todo o conteúdo */
+  background-size: cover; /* Garante que o vídeo cubra a área sem distorção */
+  filter: brightness(50%); /* Opcional: Escurece o vídeo para melhorar a legibilidade do texto */
+}
+
+h1 {
+  color: var(--branca);
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.teclado {
+  background: rgba(255, 255, 255, 0.01); /* branco com 30% de opacidade */
+  box-shadow: none;
+  border-radius: 30px;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10px;
+}
+
+.tecla {
+  background-color:transparent;
+  border-radius: 30px;
+  box-shadow: 3px 3px 0 var(--branco);
+  color: var(--branca);
+  cursor: pointer;
+  height: 120px;
+  font-size: 1.75em;
+  font-weight: bold;
+  line-height: 120px;
+  text-align: center;
+  width: 120px;
+}
+
+.tecla.ativa,
+.tecla:active {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: transparent;
+  outline: none;
+}
+
+.tecla.focus,
+.tecla:focus {
+  outline: none;
+  box-shadow: 5px 5px 5px 5px transparent;
+}
+
+.tecla.active:focus,
+.tecla:active:focus {
+  box-shadow: 3px 3px 0 transparent inset;
+  color: var(--preto);
+}
+
+.titulo{
+  font-size: 6em;
+  padding: 0.5em 0 0.3em 0;
+  font-family: 'Minecraft';
+  color: var(--branca);
+}
+
+.rodape{
+  height: 100%;
+  width: 100%;
+  padding: 5em 0 0 0;
+  color: var(--branca);
+}
+
+.tiago{
+  border-radius: 20px;
+  width: 180px;
+  height: 101px;
+}
+
+.by{
+  text-align: right;
+  margin-right: 1em;
+  color: var(--preto);
+}
