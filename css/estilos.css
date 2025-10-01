@@ -1,8 +1,8 @@
 :root {
   --verde: #45f500;
   --branca: #FFFFFF;
-  --luz: rgb(135, 120, 141);
-  --preto: #000000;
+  --luz: rgba(10, 9, 10, 0.719);
+  --preto: #ffffff;
   --rosa: #F85B72;
 }
 
@@ -13,7 +13,8 @@
 
 body {
   align-items: center;
-  background: var(--preto);
+  background-image: url("./trailer.gif"); /* Replace with the actual path to your GIF */
+  background-size: cover;
   display: flex;
   justify-content: center;
   font-family: 'Minecraft';
@@ -41,7 +42,7 @@ h1 {
 }
 
 .teclado {
-  background: rgba(255, 255, 255, 0.01); /* branco com 30% de opacidade */
+  background: rgba(0, 0, 0, 0); /* branco com 30% de opacidade */
   box-shadow: none;
   border-radius: 30px;
   display: grid;
